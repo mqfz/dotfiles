@@ -9,7 +9,7 @@ local cmp = require("blink.cmp")
 local icons = require("mini.icons")
 local lspkind = require("lspkind")
 
-cmp.build()
+cmp.build():wait(60000)
 
 cmp.setup({
   cmdline = {
