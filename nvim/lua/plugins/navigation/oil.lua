@@ -1,0 +1,15 @@
+vim.pack.add({
+  "https://github.com/stevearc/oil.nvim",
+  "https://github.com/nvim-mini/mini.icons",
+})
+
+require("mini.icons").setup()
+
+require("oil").setup({
+  delete_to_trash = true,
+  view_options = {
+    show_hidden = true,
+  },
+})
+
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

@@ -1,0 +1,5 @@
+require("plugins.coding")
+require("plugins.colorschemes")
+require("plugins.languages")
+require("plugins.navigation")
+require("plugins.visual")
